@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <VersionPrefix>1.0.0.1</VersionPrefix>
+    <Description>Utilities for quickly creating a Dokan file system.</Description>
+    <TargetFramework>net46</TargetFramework>
+    <AssemblyOriginatorKeyFile>ShamanOpenSourceKey.snk</AssemblyOriginatorKeyFile>
+    <SignAssembly>true</SignAssembly>
+    <PublicSign Condition=" '$(OS)' != 'Windows_NT' ">true</PublicSign>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DefineConstants>DEBUG;NET46</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DefineConstants>RELEASE;NET46</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <PackageReference Include="DokanNet" version="1.1.0.1" />
+    <PackageReference Include="Shaman.Configuration.Metadata" version="1.0.1.2" />
+    <PackageReference Include="Shaman.JunctionPoint" Version="1.0.0-beta-4736" />
+    <PackageReference Include="Shaman.ValueString" Version="1.0.2.31" />
+  </ItemGroup>
+</Project>
